@@ -1,0 +1,30 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="{% static 'stock/css/bootstrap.min.css' %}">
+  <script src="{% static 'stock/js/jquery.min.js' %}" charset="utf-8"></script>
+  <script src="{% static 'stock/js/bootstrap.min.js' %}" charset="utf-8"></script>
+
+	<style type="text/css">
+   
+   hr{border:solid 1px #34495e} 
+  </style>
+	<title></title>
+</head>
+<body>
+
+
+
+
+          <form method="post">
+                  {% csrf_token %}
+                  {{ form.as_p }}
+                  
+    
+               <button type="submit" class="btn btn-info btn-download ">Login</button>
+          </form>
+
+  
+</body>
+</html>
